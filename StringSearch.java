@@ -118,7 +118,7 @@ public class StringSearch {
 			Matcher m = p1.matcher(data[i]); // matcher 'm' or 'n' is true if 'p' (e.g. "00000011111") is contained
 			Matcher n = p2.matcher(data[i]); // in the string checked at data[z].
 			if (m.find() || n.find()) { // if a match is found:
-				//System.out.println("Line: " + (i+1) + " matches the given regular expression: " + data[i]);
+				System.out.println("Line: " + (i+1) + " matches the given regular expression: " + data[i]);
 				// prints the Line number + the string which matched the regular expression. 
 			}
 		}
@@ -129,7 +129,7 @@ public class StringSearch {
 			Matcher m = p.matcher(data[j]); // matcher 'm' is true if 'p' (i.e. "00101010101") is contained
 			// in the string checked at data[z].
 			if (m.find()) { // if a match is found:
-				//System.out.println("Line: " + (j+1) + " matches the given regular expression: " + data[j]);
+				System.out.println("Line: " + (j+1) + " matches the given regular expression: " + data[j]);
 				// prints the Line number + the string which matched the regular expression. 
 			}
 		}
