@@ -3,7 +3,7 @@ public void heapDeleteAtPositionK(int k) {
     return;
   }
   int child = 2*k+1 // left child
-  if (child > size -1) { // if k is a child
+  if (child > size -1) { // if k is a leaf (has no left child and therefore no right child)
     items[k] = items[size--];  // replace k with most recently added val 
     heapRebuild((k-1)/2); // call heapRebuild on parent of leaf k
   }
